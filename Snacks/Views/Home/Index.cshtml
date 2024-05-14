@@ -93,6 +93,7 @@
             </h2>
 
 
+             
           
                 Random random = new Random();
                 List<int> numeri = new List<int>();
@@ -101,8 +102,10 @@
                     numeri.Add(random.Next(1, 91)); // Genera numeri casuali da 1 a 90 inclusi
                 }
 
-                List<int> numeriFiltrati = numeri.Where(num => num >= 20 && num <= 70).ToList();
+                List<int> numeriFiltrati = numeri.Where(num => num >= 20 && num <= 70).ToList(); //primo metodo
 
+
+                //secodno metodo
                 List<int> numeriFiltrati2 = new List<int>();
 
                 foreach (int numero in numeri)
@@ -117,9 +120,12 @@
             <ul>
                 @foreach (int numero in numeriFiltrati2)
                 {
+                    
                     <li>@numero</li>
+                    
                 }
             </ul>
+
             <br>
 
             <br>
