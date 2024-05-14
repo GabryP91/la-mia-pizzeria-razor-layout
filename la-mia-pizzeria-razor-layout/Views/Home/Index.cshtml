@@ -5,11 +5,11 @@
     Layout = "_MioLayout";
 
     Pizza prova = new Pizza("Margherita", "Molto buona", "~/img/margherita.jpg", 8);
-    Pizza prova1 = new Pizza("Diavola", "buona", "~/img/Diavola.jpg", 12);
-    Pizza prova2 = new Pizza("Ortolana", "ottima", "~/img/Ortolana.jpg", 12);
-    Pizza prova3 = new Pizza("Crudaiola", "discreta", "~/img/Crudaiola.jpg", 12);
-    Pizza prova4 = new Pizza("Sfiziosa", "buona", "~/img/Sfiziosa.jpg", 12);
-    Pizza prova5 = new Pizza("Porcina", "pessima", "~/img/Porcina.jpg", 12);
+    Pizza prova1 = new Pizza("Diavola", "buona", "~/img/Diavola.jpg", 10);
+    Pizza prova2 = new Pizza("Ortolana", "ottima", "~/img/Ortolana.jpg", 7);
+    Pizza prova3 = new Pizza("Crudaiola", "discreta", "~/img/Crudaiola.jpg", 9);
+    Pizza prova4 = new Pizza("Sfiziosa", "buona", "~/img/Sfiziosa.jpg", 10);
+    Pizza prova5 = new Pizza("Porcina", "pessima", "~/img/Porcina.jpg", 10);
 
     string json = JsonConvert.SerializeObject(prova, Formatting.Indented);
     string jsonHtml = json.Replace("\r\n", "<br />").Replace("{", "").Replace("}", "");
