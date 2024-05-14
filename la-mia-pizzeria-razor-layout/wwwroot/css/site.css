@@ -20,3 +20,11 @@ body {
 .row h4 {
     color: red;
 }
+.title {
+    color:aquamarine;
+}
+.background {
+    background-image: url("../img/giphy.gif");
+    width: 100%;
+}
+
