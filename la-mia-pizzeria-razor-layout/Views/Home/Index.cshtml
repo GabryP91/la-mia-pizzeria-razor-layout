@@ -12,8 +12,7 @@
     Pizza prova5 = new Pizza("Porcina", "pessima", "~/img/Porcina.jpg", 10);
 
     string json = JsonConvert.SerializeObject(prova, Formatting.Indented);
-    string jsonHtml = json.Replace("\r\n", "<br />").Replace("{", "").Replace("}", "");
-
+  
     List<Pizza> pizze = new List<Pizza>();
     pizze.Add(prova);
     pizze.Add(prova1);
